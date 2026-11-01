@@ -16,3 +16,5 @@ add_executable(task5 task5/main.c task5/convert.c task5/overprint.c task5/roman.
 add_executable(task6 task6/main.c task6/convert.c task6/overscan.c task6/roman.c task6/zeckendorf.c)
 
 add_executable(task7 task7/main.c task7/vec_ops.c)
+
+add_executable(task8 task8/main.c task8/radix_add.c)
