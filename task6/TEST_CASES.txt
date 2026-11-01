@@ -1,0 +1,13 @@
+../cmake-build-debug/task6 < task6_demo_in.txt
+Ожидается:
+=== oversscanf: демо ===
+%Ro MMXXIV -> 2024 (assigned=1)
+%Zr 001011 -> 11 (assigned=1)
+%Zr 1 -> 0
+%Cv ff base16 -> 255
+%CV FF base16 -> 255
+%Cv 42 base99(->10) -> 42
+mix: roman=14 zeck=3 dec=7 assigned=3
+
+=== overfscanf: файл ===
+file: roman=9 zeck=1 hex=170 assigned=3
