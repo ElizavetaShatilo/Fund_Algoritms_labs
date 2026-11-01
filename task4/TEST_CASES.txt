@@ -1,0 +1,62 @@
+Базовый пример:
+./cmake-build-debug/task4 < task4/sample_input.txt
+Ожидается:
+TOTAL_SIZE 10
+TOTAL_IMPORTANCE 20
+FILES 2
+b.txt
+c.txt
+
+echo -e "2 1\nbig 5 100\nhuge 9 50" > task4/test2.txt
+./cmake-build-debug/task4 < task4/test2.txt
+echo -e "0 10" > task4/test3.txt
+./cmake-build-debug/task4 < task4/test3.txt
+echo -e "1 5\ndoc 5 7" > task4/test4.txt
+./cmake-build-debug/task4 < task4/test4.txt
+echo -e "1 -1\na 1 1" > task4/test5.txt
+./cmake-build-debug/task4 < task4/test5.txt
+echo -e "2 10\nonly_one 1 1" > task4/test6.txt
+./cmake-build-debug/task4 < task4/test6.txt
+
+
+Пустой набор при маленькой ёмкости:
+Ввод:
+2 1
+big 5 100
+huge 9 50
+Ожидается:
+TOTAL_SIZE 0
+TOTAL_IMPORTANCE 0
+FILES 0
+
+n = 0:
+Ввод:
+0 10
+Ожидается:
+TOTAL_SIZE 0
+TOTAL_IMPORTANCE 0
+FILES 0
+
+Один файл влезает:
+Ввод:
+1 5
+doc 5 7
+Ожидается:
+TOTAL_SIZE 5
+TOTAL_IMPORTANCE 7
+FILES 1
+doc
+
+Отрицательные числа:
+Ввод:
+1 -1
+a 1 1
+Ожидается:
+Ошибка: Некорректный ввод.
+
+Неполный ввод:
+Ввод:
+2 10
+only_one 1 1
+Ожидается:
+Ошибка: Некорректный ввод.
