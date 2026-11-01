@@ -1,0 +1,20 @@
+./cmake-build-debug/task5
+Ожидается:
+=== oversprintf: демо ===
+Roman 2024 = MMXXIV
+Zeckendorf 11 = 001011
+255 base16 lower = ff
+255 base16 upper = FF
+ff base16 -> dec = 255
+FF base16 -> dec = 255
+42 invalid base 99 -> 42
+int dump %mi: 00000001 00000000 00000000 00000000
+uint dump %mu: 00000001 00000000 00000000 00000000
+float dump %mf: 00000000 00000000 10000000 00111111
+double dump %md: 00000000 00000000 00000000 00000000 00000000 00000000 11110000 00111111
+mix: ok 7 % XII
+
+=== overfprintf: stdout ===
+XIV=XIV Zr(11)=001011 hex=ff
+Также записано в task5_demo_out.txt (17 байт формата).
+Ожидаемо для %Ro(0): Ошибка: Значение вне допустимого диапазона.
