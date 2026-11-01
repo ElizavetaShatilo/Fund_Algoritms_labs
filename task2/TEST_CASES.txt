@@ -1,0 +1,53 @@
+Сортировка по возрастанию:
+./cmake-build-debug/task2 input_sample.txt -a task2/out_asc.txt
+Ожидается:
+Готово. Записано записей: 5
+
+Сортировка по убыванию:
+./cmake-build-debug/task2 input_sample.txt -d out_desc.txt
+Ожидается:
+Готово. Записано записей: 5
+
+Флаг со слэшем:
+./cmake-build-debug/task2 input_sample.txt /a out_slash.txt
+Ожидается:
+Готово. Записано записей: 5
+
+Неверный argc:
+./cmake-build-debug/task2 input_sample.txt -a
+Ожидается:
+Использование: ... <входной_файл> <флаг -a|-d|/a|/d> <выходной_файл>
+Ошибка: Некорректное количество или значение аргументов.
+
+Совпадение путей:
+./cmake-build-debug/task2 input_sample.txt -a input_sample.txt
+Ожидается:
+Входной и выходной файлы не должны совпадать.
+Ошибка: Некорректное количество или значение аргументов.
+
+Неизвестный флаг:
+./cmake-build-debug/task2 input_sample.txt -x out.txt
+Ожидается:
+Ошибка: Неизвестный флаг (допустимы -a, /a, -d, /d).
+
+Нет файла:
+./cmake-build-debug/task2 missing.txt -a out.txt
+Ожидается:
+Ошибка: Не удалось открыть, прочитать или записать файл.
+
+Плохие данные (отрицательная зарплата):
+./cmake-build-debug/task2 bad_sal.txt -a out.txt
+(файл: 1 Ivan Petrov -5)
+Ожидается:
+Ошибка: Неверный формат данных во входном файле.
+
+Имя с цифрой:
+./cmake-build-debug/task2 bad_name.txt -a out.txt
+(файл: 1 Iv4n Petrov 100)
+Ожидается:
+Ошибка: Неверный формат данных во входном файле.
+
+Пустой файл:
+./cmake-build-debug/task2 input_empty.txt -a out.txt
+Ожидается:
+Ошибка: Не удалось открыть, прочитать или записать файл.

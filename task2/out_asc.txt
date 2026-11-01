@@ -1,0 +1,5 @@
+2 Boris Ivanov 900.00
+3 Ivan Petrov 1500.50
+1 Anna Smirnova 1500.50
+4 Anna Smirnova 1500.50
+5 Zoe Adams 2000.75
