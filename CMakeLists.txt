@@ -14,3 +14,5 @@ add_executable(task4 task4/main.c task4/knapsack.c task4/parsing.c)
 add_executable(task5 task5/main.c task5/convert.c task5/overprint.c task5/roman.c task5/zeckendorf.c)
 
 add_executable(task6 task6/main.c task6/convert.c task6/overscan.c task6/roman.c task6/zeckendorf.c)
+
+add_executable(task7 task7/main.c task7/vec_ops.c)
