@@ -1,0 +1,15 @@
+#ifndef STATUS_CODE_H
+#define STATUS_CODE_H
+
+typedef enum status_code {
+    STATUS_OK = 0,
+    STATUS_INVALID_EPSILON,
+    STATUS_INVALID_BASE,
+    STATUS_INVALID_COUNT,
+    STATUS_INVALID_FRACTION,
+    STATUS_NULL_POINTER,
+    STATUS_MEMORY_ERROR,
+    STATUS_LIMIT_EXCEEDED
+} status_code;
+
+#endif

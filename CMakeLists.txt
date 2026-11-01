@@ -18,3 +18,7 @@ add_executable(task6 task6/main.c task6/convert.c task6/overscan.c task6/roman.c
 add_executable(task7 task7/main.c task7/vec_ops.c)
 
 add_executable(task8 task8/main.c task8/radix_add.c)
+
+add_executable(task9 task9/main.c task9/frac_base.c)
+
+add_executable(task10 task10/main.c task10/poly_reexp.c)
